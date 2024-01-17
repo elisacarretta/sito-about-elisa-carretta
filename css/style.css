@@ -1,7 +1,7 @@
 *{
-  margin:0px; 
-  padding:0px;
-  font-family: 'Roboto Condensed', sans-serif;
+margin:0px; 
+padding:0px;
+font-family: 'Roboto Condensed', sans-serif;
 }
 
 .header-portfolio {
@@ -19,26 +19,30 @@ border-bottom:1px solid black;
 }
 
 h3 {
-  padding-left: 30px;
-  padding-right: 30px;
+padding-left: 30px;
+padding-right: 30px;
 }
 
 .logo-personale {
-  margin-left: 40px;
-  width: 40px;
-  height: 40px;
+margin-left: 40px;
+width: 40px;
+height: 40px;
 }
+
 .about-container {
-width:100%;
+width:80%;
 display: flex;
 align-items: center;
+margin-left: auto;
+margin-right: auto;
+flex-wrap: wrap;
 }
 
 .about-text {
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right:auto;
-  display: block;
+margin-top: 100px;
+margin-left: auto;
+margin-right:auto;
+display: block;
 }
 
 .about-img {
@@ -46,18 +50,18 @@ margin-left: auto;
 margin-right:auto;
 margin-top: 100px;
 display: block;
+width: 20%;
 }
 
 .lavori-img {
-width: 1260px;
-height: 694px;
+width: 70%;
 display: block;
 margin-left: auto;
 margin-right: auto;
 }
 
 .lavori-text {
-  text-align: center;
+text-align: center;
 }
 
 .tesi-img {
@@ -65,14 +69,13 @@ margin-bottom: 50px;
 }
 
 .portrait {
-  width: 204px;
-  height: 289px;
+width: 204px;
+height: 289px;
 }
 
 .space {
-  margin-top: 100px;
+margin-top: 100px;
 }
-
 
 .footer-portfolio {
 width:100%;
@@ -99,4 +102,32 @@ width: 100%;
   /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
 padding-top: 102px;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 15px */
+@media screen and (min-width: 601px) {
+  div.about-text {
+    font-size: 15px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 10px */
+@media screen and (max-width: 600px) {
+  div.about-text {
+    font-size: 10px;
+  }
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  div.lavori-text {
+    font-size: 15px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.lavori-text {
+    font-size: 10px;
+  }
 }
