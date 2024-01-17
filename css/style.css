@@ -23,6 +23,11 @@ h3 {
   padding-right: 30px;
 }
 
+.logo-personale {
+  margin-left: 40px;
+  width: 40px;
+  height: 40px;
+}
 .about-container {
 width:100%;
 display: flex;
@@ -49,6 +54,10 @@ height: 694px;
 display: block;
 margin-left: auto;
 margin-right: auto;
+}
+
+.lavori-text {
+  text-align: center;
 }
 
 .tesi-img {
