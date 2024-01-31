@@ -34,6 +34,7 @@ width:80%;
 display: flex;
 align-items: center;
 margin-left: auto;
+margin-bottom: 10vh;
 margin-right: auto;
 flex-wrap: wrap;
 }
@@ -62,6 +63,7 @@ margin-right: auto;
 
 .lavori-text {
 text-align: center;
+margin-bottom: 10vh;
 }
 
 .tesi-img {
