@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elisa Carretta Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="css/style.css" />
    
@@ -20,65 +24,75 @@
 
         <div class="header-portfolio" id="myheader">
             <img class="logo-personale" src="img/logo-elisa-carretta.png" alt="logo-personale">
-           <h3>About</h3>
+           <h3>About</h3> 
            <h3>Lavori</h3>
            <h3>Contatti</h3>
         </div>
 
     <!-- fine header-->
 
-    <!-- descrizione About -->
-   
-    <div class="about-container">
-            <div class="about-text">
-                <h2>Elisa Carretta</h2>
-                <br>
-                <p>Ciao, sono Elisa! <br>
-                Sono laureata in Graphic Design e mi sto specializzando in Digital Design e Comunicazione.<br>
-                Ho uno stile minimalista e pulito, ma spesso mi piace integrare qualche elemento illustrato ai miei lavori.<br>
-                Quando realizzo un logo preferisco partire dalla carta o da un’illustrazione digitale, per poi definire il logo finale.<br>
-                Ho lavorato su alcuni progetti, che vanno dall’editoria all’app design, passando per il logo design e le illustrazioni.
-                </p>
+    <!-- About -->
+
+    <div class="container">
+        <div class="row">
+          
+                <div class="col-10">
+                    <h2>Elisa Carretta</h2>
+                    <br>
+                    <p>Ciao, sono Elisa! <br>
+                    Sono laureata in Graphic Design e mi sto specializzando in Digital Design e Comunicazione.<br>
+                    Ho uno stile minimalista e pulito, ma spesso mi piace integrare qualche elemento illustrato ai miei lavori.<br>
+                    Quando realizzo un logo preferisco partire dalla carta o da un’illustrazione digitale, per poi definire il logo finale.<br>
+                    Ho lavorato su alcuni progetti, che vanno dall’editoria all’app design, passando per il logo design e le illustrazioni.
+                    </p>
+                </div>
+        
+            <!-- immagine portfolio -->
+            <div class="col-2">
+                <img class="portrait" src="img/elisa-bw-cut.JPG" alt="foto elisa carretta">
             </div>
-    
-        <!-- immagine portfolio -->
-        <div class="about-img">
-            <img class="portrait" src="img/elisa-bw-cut.JPG" alt="foto elisa carretta">
-        </div>
 
-     </div>
-    
-    
+        
+        </div>
+</div>
+   
+
     <!-- Lavori -->
+    <!-- tesi app -->
+  
+    <div class="col-12">
+        <div class="lavori">
+            <div class="tesi-img">
+                <img class="lavori-img" src="img/tesi-app.jpg" alt="lavoro tesi">
+            </div>
 
-    <div class="lavori">
-        <div class="tesi-img">
-            <img class="lavori-img" src="img/tesi-app.jpg" alt="lavoro tesi">
         </div>
 
-    </div>
-
-    <div class="lavori-text">
-        <p>Per la mia tesi triennale ho disegnato un’app per celiaci che tenesse traccia dei buoni mensili mutuabili, 
+        <div class="lavori-text">
+            <p>Per la mia tesi triennale ho disegnato un’app per celiaci che tenesse traccia dei buoni mensili mutuabili, 
             <br>dei locali che offrono opzioni senza glutine, che offrisse uno scanner per aiutare a individuare dei prodotti adatti, 
             <br>oltre che ad alcune informazioni generali che è bene tenere a mente quando si fa la spesa o si è alle prime armi con la dieta senza glutine.
-         </p>
-    </div>
-
-    <div class="lavori">
-        <div class="rivista-img">
-            <img class="lavori-img" src="img/rivista-celiakey.jpg" alt="lavoro rivista">
+            </p>
         </div>
-
     </div>
 
-    <div class="lavori-text">
-        <p> Per la tesi ho però utilizzato lo stesso nome che avevo trovato per questo magazine, realizzato durante il terzo anno di triennale. 
+    <!-- rivista -->
+    <div class="col-12">
+        <div class="lavori">
+            <div class="rivista-img">
+                <img class="lavori-img" src="img/rivista-celiakey.jpg" alt="lavoro rivista">
+            </div>
+         </div>
+
+        <div class="lavori-text">
+            <p> Per la tesi ho però utilizzato lo stesso nome che avevo trovato per questo magazine, realizzato durante il terzo anno di triennale. 
             <br>Per il corso di graphic design abbiamo esplorato il mondo dell’editoria, dedicandoci alla creazione di una rivista, con tema a scelta. 
             <br>Avevo già scelto la celiachia come ambito di interesse, qui però con una grafica più classica e dai toni pastello.
-         </p>
+            </p>
+         </div>
     </div>
 
+ <!-- travel app -->
     <div class="lavori">
         <div class="travel-img">
             <img class="lavori-img" src="img/travel-app.jpg" alt="travel app">
@@ -100,11 +114,6 @@
 
     </div>
 
-    <div class="lavori">
-        <div class="intervista-img">
-            <img class="lavori-img" src="img/intervista-2.jpg" alt="lavoro intervista">
-        </div>
-
     </div>
 
     <div class="lavori-text">
@@ -112,7 +121,6 @@
             <br>Ho poi impaginato la trascrizione come se l’intervista facesse parte di un magazine.
          </p>
     </div>
-
     
     <!-- fine Lavori -->
 
@@ -120,7 +128,7 @@
     <!-- footer -->
 
     <footer class="footer-portfolio">
-        <p class="footer-text">Per contattarmi: elisa.carretta.design@gmail.com</p>
+        <h3 class="footer-text">Per contattarmi: elisa.carretta.design@gmail.com</h3>
     </footer>
 
     <!-- fine footer -->

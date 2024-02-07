@@ -19,9 +19,12 @@ border-bottom:1px solid black;
 }
 
 h3 {
+font-size: 18px;
+font-weight: bold;
 padding-left: 30px;
 padding-right: 30px;
 }
+
 
 .logo-personale {
 margin-left: 40px;
@@ -29,28 +32,18 @@ width: 40px;
 height: 40px;
 }
 
+
 .about-container {
-width:80%;
-display: flex;
 align-items: center;
-margin-left: auto;
 margin-bottom: 10vh;
-margin-right: auto;
-flex-wrap: wrap;
 }
 
 .about-text {
 margin-top: 100px;
-margin-left: auto;
-margin-right:auto;
-display: block;
 }
 
 .about-img {
-margin-left: auto;
-margin-right:auto;
 margin-top: 100px;
-display: block;
 width: 20%;
 }
 
@@ -99,6 +92,7 @@ align-items: center;
 margin-left: 200px;
 }
 
+
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
 position: fixed;
@@ -136,5 +130,12 @@ padding-top: 102px;
 @media screen and (max-width: 600px) {
   div.lavori-text {
     font-size: 10px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the width of <div> to */
+@media screen and (max-width: 600px) {
+  div.about-img {
+    width: 40px;
   }
 }
