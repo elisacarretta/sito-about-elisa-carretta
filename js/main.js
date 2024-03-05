@@ -1,50 +1,19 @@
-/*
-
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("myheader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
+// scrollspy
+function scrollSpy() {
+  var links = document.querySelectorAll('a[data-page]');
+  links.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+          e.preventDefault();
+          var pageId = this.getAttribute('data-page');
+          var targetElement = document.getElementById(pageId);
+          var targetOffset = targetElement.offsetTop;
+          window.scrollTo({
+              top: targetOffset,
+              behavior: 'smooth'
+          });
+      });
+  });
 }
 
-*/
-
-$("a").click(function(){
-  var pageId = $(this).attr("data-page");
-  $("html, body").animate({ scrollTop: $("#"+pageId).offset().top }, 200);
-});
-
-document.getElementById('About').onmouseover = function() {
-  this.style.color = '#DE3163';
-};
-
-document.getElementById('About').onmouseout = function() {
-  this.style.color = 'black';
-};
-
-document.getElementById('Lavori').onmouseover = function() {
-  this.style.color = '#DE3163';
-};
-
-document.getElementById('Lavori').onmouseout = function() {
-  this.style.color = 'black';
-};
-
-document.getElementById('Contatti').onmouseover = function() {
-  this.style.color = '#DE3163';
-};
-
-document.getElementById('Contatti').onmouseout = function() {
-  this.style.color = 'black';
-};
+// Aggiunta di scrollspy per i link
+scrollSpy();
