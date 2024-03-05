@@ -1,3 +1,5 @@
+/*
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
@@ -15,3 +17,34 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+*/
+
+$("a").click(function(){
+  var pageId = $(this).attr("data-page");
+  $("html, body").animate({ scrollTop: $("#"+pageId).offset().top }, 200);
+});
+
+document.getElementById('About').onmouseover = function() {
+  this.style.color = '#DE3163';
+};
+
+document.getElementById('About').onmouseout = function() {
+  this.style.color = 'black';
+};
+
+document.getElementById('Lavori').onmouseover = function() {
+  this.style.color = '#DE3163';
+};
+
+document.getElementById('Lavori').onmouseout = function() {
+  this.style.color = 'black';
+};
+
+document.getElementById('Contatti').onmouseover = function() {
+  this.style.color = '#DE3163';
+};
+
+document.getElementById('Contatti').onmouseout = function() {
+  this.style.color = 'black';
+};

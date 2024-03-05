@@ -13,121 +13,166 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css"/>
    
 </head>
 
 <!-- inizio struttura sito-->
 
 <body>
+    
+<!-- header -->
 
-        <div class="header-portfolio" id="myheader">
-            <img class="logo-personale" src="img/logo-elisa-carretta.png" alt="logo-personale">
-           <h3>About</h3> 
-           <h3>Lavori</h3>
-           <h3>Contatti</h3>
+    <nav id="navbar-portfolio" class="navbar navbar-expand-lg navbar-light bg-white header-portfolio">
+        <img class="img-fluid logo-personale" src="img/logo-elisa-carretta.png" alt="logo-personale">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" id="About" href="#about" data-page="about">About</a>
+            <a class="nav-item nav-link" id="Lavori" href="#lavori" data-page="lavori">Lavori</a>
+            <a class="nav-item nav-link" id="Contatti" href="#contatti" data-page="contatti">Contatti</a>
+          </div>
         </div>
+      </nav>
+    
+    <!-- fine header -->
 
-    <!-- fine header-->
+    <!-- slideshow -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/moodboard-tesi.jpg" class="d-block w-100" alt="moodboard tesi">
+          </div>
+          <div class="carousel-item">
+            <img src="img/rivista-celiakey-full.jpg" class="d-block w-100" alt="rivista doppia pagina">
+          </div>
+          <div class="carousel-item">
+            <img src="img/travel-app-full.jpg" class="d-block w-100" alt="travel app schermate">
+          </div>
+        </div>
+    </div>
+
+    <!-- fine slideshow-->
 
     <!-- About -->
-
-    <div class="container">
-        <div class="row">
-          
-                <div class="col-10">
-                    <h2>Elisa Carretta</h2>
-                    <br>
-                    <p>Ciao, sono Elisa! <br>
-                    Sono laureata in Graphic Design e mi sto specializzando in Digital Design e Comunicazione.<br>
-                    Ho uno stile minimalista e pulito, ma spesso mi piace integrare qualche elemento illustrato ai miei lavori.<br>
-                    Quando realizzo un logo preferisco partire dalla carta o da un’illustrazione digitale, per poi definire il logo finale.<br>
-                    Ho lavorato su alcuni progetti, che vanno dall’editoria all’app design, passando per il logo design e le illustrazioni.
-                    </p>
-                </div>
-        
-            <!-- immagine portfolio -->
-            <div class="col-2">
-                <img class="portrait" src="img/elisa-bw-cut.JPG" alt="foto elisa carretta">
-            </div>
-
-        
-        </div>
-</div>
-   
-
-    <!-- Lavori -->
-    <!-- tesi app -->
-  
-    <div class="col-12">
-        <div class="lavori">
-            <div class="tesi-img">
-                <img class="lavori-img" src="img/tesi-app.jpg" alt="lavoro tesi">
-            </div>
-
-        </div>
-
-        <div class="lavori-text">
-            <p>Per la mia tesi triennale ho disegnato un’app per celiaci che tenesse traccia dei buoni mensili mutuabili, 
-            <br>dei locali che offrono opzioni senza glutine, che offrisse uno scanner per aiutare a individuare dei prodotti adatti, 
-            <br>oltre che ad alcune informazioni generali che è bene tenere a mente quando si fa la spesa o si è alle prime armi con la dieta senza glutine.
-            </p>
-        </div>
-    </div>
-
-    <!-- rivista -->
-    <div class="col-12">
-        <div class="lavori">
-            <div class="rivista-img">
-                <img class="lavori-img" src="img/rivista-celiakey.jpg" alt="lavoro rivista">
-            </div>
-         </div>
-
-        <div class="lavori-text">
-            <p> Per la tesi ho però utilizzato lo stesso nome che avevo trovato per questo magazine, realizzato durante il terzo anno di triennale. 
-            <br>Per il corso di graphic design abbiamo esplorato il mondo dell’editoria, dedicandoci alla creazione di una rivista, con tema a scelta. 
-            <br>Avevo già scelto la celiachia come ambito di interesse, qui però con una grafica più classica e dai toni pastello.
-            </p>
-         </div>
-    </div>
-
- <!-- travel app -->
-    <div class="lavori">
-        <div class="travel-img">
-            <img class="lavori-img" src="img/travel-app.jpg" alt="travel app">
-        </div>
-
-    </div>
-
-    <div class="lavori-text">
-        <p> Questo progetto è invece incentrato sulla progettazione di un’app per fotografi, che mostri agli appassionati luoghi interessanti 
-            <br>con relativi itinerari e consigli su quali obiettivi e macchine utilizzare per i loro scatti.
-            <br>È un concept principalmente estetico, con una forte tipografia e una palette colori coerente e precisa.
-         </p>
-    </div>
-
-    <div class="lavori">
-        <div class="intervista-img">
-            <img class="lavori-img" src="img/intervista-1.jpg" alt="lavoro intervista">
-        </div>
-
-    </div>
-
-    </div>
-
-    <div class="lavori-text">
-        <p> Qui invece ho curato un’intervista. Ho intervistato un gelataio, registrato e montato il video, trascrivendo anche l’intervista. 
-            <br>Ho poi impaginato la trascrizione come se l’intervista facesse parte di un magazine.
-         </p>
+    <div class="container-fluid col-8 align-items-around about-heading" class="page" id="about"></div>
+        <h2>About</h2>
     </div>
     
-    <!-- fine Lavori -->
+    <div class="container-fluid about">
+        <div class="row d-flex align-items-center justify-content-center m-auto">
+            <!-- <div class="col-xl-3 col-lg-3 col-md-4 m-0 p-20"> -->
+                <!-- immagine portfolio -->
+                <div class="col-xl-4 col-lg-3 col-md-8 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <img src="img/elisa-bw-cut.JPG" class="img-fluid about-img" alt="foto elisa carretta">
+                </div>
+            <!-- </div> -->
+                    
+            <div class="col-xl-4 col-lg-4 col-md-8">
+                <h2>Elisa Carretta</h2>
+                <p class="about-text">Ciao, sono Elisa! <br>
+                Sono laureata in Graphic Design e mi sto specializzando in Digital Design e Comunicazione. Ho uno stile minimalista e pulito, 
+                ma spesso mi piace integrare qualche elemento illustrato ai miei lavori.
+                Quando realizzo un logo preferisco partire dalla carta o da un’illustrazione digitale, per poi definire il logo finale.
+                Ho lavorato su alcuni progetti, che vanno dall’editoria all’app design, passando per il logo design e le illustrazioni.
+                </p>
+            </div>
+        </div>
+    </div>  
 
+    <!-- inizio Lavori -->
+    <div class="container-fluid col-8 align-items-around lavori-heading" class="page" id="lavori"></div>
+        <h2>Lavori</h2>
+    </div>
+
+    <!--tesi app -->
+    <div class="container-fluid col-8 align-items-center justify-content-center">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/tesi-app-2.jpg" class="d-block col-12 align-items-center justify-content-center" alt="intervista prima parte">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/tesi-moodboard.jpg" class="d-block col-12 align-items-center justify-content-center" alt="intervista seconda parte">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 justify-content-center align-items-center lavori-text">
+            <p> Per la mia tesi triennale ho disegnato un’app per celiaci che tenesse traccia dei buoni mensili mutuabili, 
+                dei locali che offrono opzioni senza glutine, che offrisse uno scanner per aiutare a individuare dei prodotti adatti, 
+                oltre che ad alcune informazioni generali che è bene tenere a mente quando si fa la spesa o si è alle prime armi con la dieta senza glutine.
+            </p>
+        </div>
+    </div>
+
+     <!--rivista-->
+     <div class="container-fluid col-8 align-items-center justify-content-center">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/rivista-celiakey.jpg" class="d-block col-12 d-flex align-items-center justify-content-center" alt="intervista prima parte">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/rivista-celiakey-full.jpg" class="d-block col-12 d-flex align-items-center justify-content-center" alt="intervista seconda parte">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 justify-content-center align-items-center lavori-text">
+            <p> Per la tesi ho però utilizzato lo stesso nome che avevo trovato per questo magazine, realizzato durante il terzo anno di triennale. 
+                Per il corso di graphic design abbiamo esplorato il mondo dell’editoria, dedicandoci alla creazione di una rivista, con tema a scelta. 
+                Avevo già scelto la celiachia come ambito di interesse, qui però con una grafica più classica e dai toni pastello.
+            </p>
+        </div>
+    </div>
+
+   <!-- travel app -->
+   <div class="container-fluid col-8 align-items-center justify-content-center">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/travel-app.jpg" class="d-block col-12 align-items-center justify-content-center" alt="intervista prima parte">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/travel-app-full.jpg" class="d-block col-12 align-items-center justify-content-center" alt="intervista seconda parte">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 justify-content-center align-items-center lavori-text">
+            <p> Questo progetto è invece incentrato sulla progettazione di un’app per fotografi, che mostri agli appassionati luoghi interessanti 
+            con relativi itinerari e consigli su quali obiettivi e macchine utilizzare per i loro scatti.
+            È un concept principalmente estetico, con una forte tipografia e una palette colori coerente e precisa.
+            </p>
+        </div>
+    </div>
+
+    <!-- intervista -->
+    <div class="container-fluid col-8 align-items-center justify-content-center">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/intervista-1.jpg" class="d-block col-12 align-items-center justify-content-center" alt="intervista prima parte">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/intervista-2.jpg" class="d-block col-12 align-items-center justify-content-center" alt="intervista seconda parte">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 justify-content-center align-items-center lavori-text">
+            <p> Qui invece ho curato un’intervista. Ho intervistato un gelataio, registrato e montato il video, trascrivendo anche l’intervista.
+                Ho poi impaginato la trascrizione come se l’intervista facesse parte di un magazine.
+            </p>
+        </div>
+    </div>
+
+    <!-- fine Lavori -->
 
     <!-- footer -->
 
-    <footer class="footer-portfolio">
+    <footer class="container-fluid d-flex align-items-center justify-content-center footer-portfolio" class="page" id="contatti">
         <h3 class="footer-text">Per contattarmi: elisa.carretta.design@gmail.com</h3>
     </footer>
 
